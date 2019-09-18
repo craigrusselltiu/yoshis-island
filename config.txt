@@ -1,0 +1,16 @@
+charSize=normal
+resX=1000
+resY=600
+startPos=100
+startVel=100
+background=:/images/clouds.png
+foreground=:/images/hills.png
+backgroundVel=10
+parallax=true
+character=:/images/yoshi2.png
+animated=true
+sprite1=:/images/yoshi1.png
+sprite2=:/images/yoshi2.png
+sprite3=:/images/yoshi3.png
+sprite4=:/images/yoshi4.png
+sprite5=:/images/yoshi5.png

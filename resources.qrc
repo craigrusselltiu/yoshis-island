@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>config.txt</file>
+        <file>images/yoshi1.png</file>
+        <file>images/yoshi2.png</file>
+        <file>images/yoshi3.png</file>
+        <file>images/yoshi4.png</file>
+        <file>images/yoshi5.png</file>
+        <file>sounds/flowerGarden.wav</file>
+        <file>sounds/pause.wav</file>
+        <file>images/paused.png</file>
+        <file>images/clouds.png</file>
+        <file>images/hills.png</file>
+        <file>images/title.png</file>
+    </qresource>
+</RCC>
