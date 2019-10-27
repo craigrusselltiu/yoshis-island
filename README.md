@@ -80,7 +80,7 @@ Factory Method
 	- Implementing the factory method greatly reduces code repetition.
 	- Allows for easily extendable code.
 
-# Extensions
+# Stretch Goals Reached
 
 Animated Character
 - The character is animated by looping back and forth between a list of images.
