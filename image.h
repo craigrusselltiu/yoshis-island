@@ -31,6 +31,10 @@ public:
         }
     }
 
+    virtual Coordinate getCoordinate() {return i_coordinate;}
+    virtual int getWidth() {return i_w;}
+    virtual int getHeight() {return i_h;}
+
     virtual void setPath(QString set) {
         i_path = set;
     }
@@ -45,6 +49,11 @@ public:
     }
 
     virtual void animate() = 0;
+
+    // make character jump
+    virtual void jump() {qDebug() << "bruh";}
+    virtual bool offscreen() {return false;}
+    virtual bool intersects(Image *obstacle) {return false;}
 
 protected:
     QString i_path;

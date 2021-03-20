@@ -12,5 +12,25 @@
         <file>images/clouds.png</file>
         <file>images/hills.png</file>
         <file>images/title.png</file>
+        <file>images/goomba.png</file>
+        <file>images/gameover.png</file>
+        <file>sounds/gameOver.wav</file>
+        <file>sounds/jump.wav</file>
+        <file>images/jump1.png</file>
+        <file>images/jump2.png</file>
+        <file>images/jump3.png</file>
+        <file>images/koopa.png</file>
+        <file>images/koopa1.png</file>
+        <file>images/koopa2.png</file>
+        <file>images/koopa3.png</file>
+        <file>images/koopa4.png</file>
+        <file>images/koopa5.png</file>
+        <file>images/koopa6.png</file>
+        <file>images/goomba1.png</file>
+        <file>images/goomba2.png</file>
+        <file>images/goomba3.png</file>
+        <file>images/goomba4.png</file>
+        <file>images/goomba5.png</file>
+        <file>images/goomba6.png</file>
     </qresource>
 </RCC>

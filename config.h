@@ -19,6 +19,8 @@ public:
     QString getBackground() {return background;}
     QString getForeground() {return foreground;}
     QString getCharacter() {return character;}
+    QString getGoomba() {return goomba;}
+    QString getKoopa() {return koopa;}
     bool isParallax() {return parallax;}
     bool isAnimated() {return animated;}
     unsigned int getCharSize() {return charSize;}
@@ -32,7 +34,7 @@ private:
     QString path;
     QMap<QString, QString> map;
 
-    QString background, foreground, character;
+    QString background, foreground, character, goomba, koopa;
     unsigned int resX, resY, startPos, startVel, backgroundVel, charSize;
     bool parallax, animated;
 };

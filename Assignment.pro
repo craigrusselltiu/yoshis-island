@@ -26,6 +26,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+    enemy.cpp \
         main.cpp \
         dialog.cpp \
     config.cpp \
@@ -37,6 +38,7 @@ HEADERS += \
         dialog.h \
     config.h \
     coordinate.h \
+    enemy.h \
     image.h \
     character.h \
     background.h \

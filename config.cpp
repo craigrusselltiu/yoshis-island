@@ -41,6 +41,8 @@ Config::Config(QString path) : path(path) {
     character = map["character"];
     foreground = map["foreground"];
     background = map["background"];
+    goomba = map["goomba"];
+    koopa = map["koopa"];
 
     parallax = toBool(map["parallax"]);
     animated = toBool(map["animated"]);

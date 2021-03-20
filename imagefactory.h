@@ -3,13 +3,14 @@
 
 #include "character.h"
 #include "background.h"
+#include "enemy.h"
 #include "config.h"
 
 // concrete factory, creates different images depending on the input
 // the factory method is used to reduce code repetition in creating image objects with custom functions and properties
 class ImageFactory {
 public:
-
+    ImageFactory();
     ImageFactory(Config input) : config(input) {
 
         // initialise map when factory is created
@@ -59,14 +60,16 @@ public:
             // premade characters, e.g. select = 1 returns main character
             if (select == 1) {
                 QStringList list = createAnimation("sprite");
+                QStringList jumpList = createAnimation("jump");
 
                 // return a character of size, size*ratio
-                return new Character(config.getCharacter(), Coordinate(config.getStartPos(), resY/6, resY), size*ratio, size*ratio, list);
+                return new Character(config.getCharacter(), Coordinate(config.getStartPos(), resY/6, resY), size*ratio, size*ratio, list, jumpList);
 
             // return default, editable, generic character
             } else {
                 QStringList list;
-                return new Character(config.getCharacter(), Coordinate(0, 0, resY), size*ratio, size*ratio, list);
+                QStringList jumpList;
+                return new Character(config.getCharacter(), Coordinate(0, 0, resY), size*ratio, size*ratio, list, jumpList);
             }
 
         // create a background image or object
@@ -89,6 +92,15 @@ public:
             // return default, editable, generic background image
             } else {
                 return new Background(config.getForeground(), Coordinate(0, 0, resY), resX, resY, velocity);
+            }
+
+        } else if (type == "enemy") {
+            if (select == 1) {
+                QStringList list = createAnimation("goomba");
+                return new Enemy(config.getGoomba(), Coordinate(resX*2, resY/6, resY), 100*ratio, 100*ratio, velocity, list);
+            } else if (select == 2) {
+                QStringList list = createAnimation("koopa");
+                return new Enemy(config.getKoopa(), Coordinate(resX*2, resY/6+200, resY), 150*ratio, 150*ratio, velocity, list);
             }
 
         // otherwise return a null pointer

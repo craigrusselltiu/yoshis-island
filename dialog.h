@@ -11,6 +11,7 @@
 #include <QSound>
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
+#include <QGraphicsDropShadowEffect>
 
 namespace Ui {
 class Dialog;
@@ -35,13 +36,16 @@ private:
     Ui::Dialog *ui;
 
     QTimer *timer;
-    QLabel *pauseLabel, *titleLabel;
+    QLabel *pauseLabel, *titleLabel, *gameOver, *scoreLabel;
     QMediaPlaylist *playlist;
     QMediaPlayer *music;
 
+    ImageFactory *factory;
     Image *background1, *background2, *parallax1, *parallax2, *clouds1, *clouds2, *character;
+    QList<Image*> obstacles;
     Config config;
-    bool paused, started;
+    bool paused, started, dead;
+    int counter = 0, score = 0, random, spawnTime;
 };
 
 #endif // DIALOG_H
