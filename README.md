@@ -6,6 +6,7 @@ A basic recreation of the side-scrolling system in Yoshi's Island written in C++
 - I have extended the game to be a fully-playable game instead of being just a framework.
 - It is now a non-stop side scroller where enemies must be avoided through a simple jump key.
 - Added score to keep track of how many enemies have been avoided.
+- Added increasing difficulty the higher your score goes.
 - Added jump functionality to the character.
 - Added enemies that will result in a game over when touched. (Comes with a nice sound effect!)
 - Added numerous extra animations to the character and enemies.
