@@ -2,6 +2,8 @@
 
 A flappy-bird-like minigame where you see how far you can get Yoshi by avoiding enemies as you ride into the infinite horizon.
 
+Video Demo: https://www.youtube.com/watch?v=6dfx9lR2tgI
+
 ## What I Learned
 - C++
 - Qt / Qt Creator
