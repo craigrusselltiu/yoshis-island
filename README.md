@@ -9,7 +9,7 @@ Video Demo: https://www.youtube.com/watch?v=6dfx9lR2tgI
 - Qt / Qt Creator
 - Object-oriented programming and design
 - Practical applications of Gang of Four design patterns
-- Handling user real-time inputs to perform certain functionalities
+- Handling real-time user inputs to perform certain functionalities
 - Among other things!
 
 ## Game Extension (v1.0)
