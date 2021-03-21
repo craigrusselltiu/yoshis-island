@@ -1,6 +1,14 @@
-# Documentation
+# Yoshi's Island Jump!
 
-A basic recreation of the side-scrolling system in Yoshi's Island written in C++ with Qt Creator.
+A flappy-bird-like minigame where you see how far you can get Yoshi by avoiding enemies as you ride into the infinite horizon.
+
+## What I Learned
+- C++
+- Qt / Qt Creator
+- Object-oriented programming and design
+- Practical applications of Gang of Four design patterns
+- Handling user real-time inputs to perform certain functionalities
+- Among other things!
 
 ## Game Extension (v1.0)
 - I have extended the game to be a fully-playable game instead of being just a framework.
