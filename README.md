@@ -104,6 +104,10 @@ Factory Method
 	- Implementing the factory method greatly reduces code repetition.
 	- Allows for easily extendable code.
 
+Singleton
+- The config file is shared across multiple different components.
+- Instead of passing around the config class, use Singleton to ensure that there is always just one instance of it.
+
 # Stretch Goals Reached
 
 Animated Character
